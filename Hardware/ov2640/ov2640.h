@@ -21,14 +21,16 @@
 //PIXCLK    PA6
 //VSYNC     PG9
 //HSYNC     PA4
-//D0        PC6
-//D1        PC7
-//D2        PC8
+//RES		PC8
+//D0        PC12
+//D1        PC10
+//D2        PC4
 //D3        PC9
 //D4        PC11
 //D5        PD3
 //D6        PB8
 //D7        PB9
+//PWDN		PA5
 /* -------------------------------------------------------------------------- */
 typedef struct
 {

@@ -1,3 +1,14 @@
+/************************************************
+ * @file Name: bsp_dma.h
+ * @brief : DMA配置头文件
+ * @author : lbm (3095088766@qq.com)
+ * @version : 1.0
+ * @date : 2024-05-12
+ * 
+ * modification history :
+ * @date:       @version:      @author:     
+ * Changes: 
+*************************************************/
 #ifndef _BSP_DMA_H
 #define _BSP_DMA_H
 

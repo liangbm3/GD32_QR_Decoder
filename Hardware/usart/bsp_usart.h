@@ -1,8 +1,24 @@
+/************************************************
+ * @file Name: bsp_usart.h
+ * @brief : 娑撴彃褰涢幒銉︽暪闁板秶鐤嗘径瀛樻瀮娴狅拷
+ * @author : lbm (3095088766@qq.com)
+ * @version : 1.0
+ * @date : 2024-05-12
+ * 
+ * modification history :
+ * @date:       @version:      @author:     
+ * Changes: 
+*************************************************/
+
 #ifndef _BSP_USART_H
 #define _BSP_USART_H
 
 #include "gd32f4xx.h"
 #include "systick.h"
+#include "gd32f4xx_rcu.h"
+#include "gd32f4xx_dma.h"
+#include "gd32f4xx_usart.h"
+#include "gd32f4xx_gpio.h"
 
 #define BSP_USART_TX_RCU  RCU_GPIOA
 #define BSP_USART_RX_RCU  RCU_GPIOA
@@ -20,7 +36,7 @@
 #define USART_RECEIVE_LENGTH  4096
 
 
-/* 0 : 中断接收  1 ：DMA接收 */
+/*0锛氫腑鏂帴鏀讹紱1锛欴MA鎺ユ敹*/
 #define USB_USART_DMA 1
 
 extern uint8_t g_recv_buff[USART_RECEIVE_LENGTH];
