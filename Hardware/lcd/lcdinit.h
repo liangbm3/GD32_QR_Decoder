@@ -43,9 +43,9 @@
 //SCL - PB13 SPI1_SCK
 //SDA - PB15 SPI1_MOSI
 //RES - PD0(可以接入复位)
-//DC  - PC6
+//DC  - PG6
 //CS  - PB12	SPI1_NSS
-//BLK - PC7- TIMER7_CH0
+//BLK - PG7- TIMER7_CH0
 
 #define RCU_LCD_SCL  	RCU_GPIOB				//SCK
 #define PORT_LCD_SCL 	GPIOB
@@ -59,16 +59,16 @@
 #define PORT_LCD_CS 	GPIOB
 #define GPIO_LCD_CS 	GPIO_PIN_12
 
-#define RCU_LCD_DC		RCU_GPIOC				//DC
-#define PORT_LCD_DC 	GPIOC
+#define RCU_LCD_DC		RCU_GPIOG				//DC
+#define PORT_LCD_DC 	GPIOG
 #define GPIO_LCD_DC 	GPIO_PIN_6
 
 #define RCU_LCD_RES		RCU_GPIOD				//RES
 #define PORT_LCD_RES 	GPIOD
 #define GPIO_LCD_RES 	GPIO_PIN_0
 
-#define RCU_LCD_BLK		RCU_GPIOC				//BLK
-#define PORT_LCD_BLK 	GPIOC
+#define RCU_LCD_BLK		RCU_GPIOG				//BLK
+#define PORT_LCD_BLK 	GPIOG
 #define GPIO_LCD_BLK 	GPIO_PIN_7
 
 

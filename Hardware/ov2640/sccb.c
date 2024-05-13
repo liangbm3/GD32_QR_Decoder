@@ -15,7 +15,7 @@
  * @brief : OV2640的SCCB接口初始化
  * @date : 2024-05-09
  *************************************************/
-void ov2640_SCCB_Init(void)
+void OV2640_IIC_Init(void)
 {
     rcu_periph_clock_enable(RCU_OV2640_SCL);
     rcu_periph_clock_enable(RCU_OV2640_SDA);
