@@ -81,6 +81,9 @@
     "sccb.h": "c",
     "bsp_usart.h": "c",
     "systick.h": "c",
-    "lcdinit.h": "c"
+    "lcdinit.h": "c",
+    "usart.h": "c",
+    "gd32f4xx_gpio.h": "c",
+    "dma.h": "c"
   }
 }
