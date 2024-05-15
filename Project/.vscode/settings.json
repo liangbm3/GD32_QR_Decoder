@@ -38,23 +38,21 @@
   "C_Cpp_Runner.compilerArgs": [],
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.includePaths": [
-    "e:\\GD32F450\\project1\\User",
-    "e:\\GD32F450\\project1\\Firmware\\CMSIS",
-    "e:\\GD32F450\\project1\\Firmware\\CMSIS\\GD\\GD32F4xx\\Include",
-    "e:\\GD32F450\\project1\\Firmware\\GD32F4xx_standard_peripheral\\Include",
-    "e:\\GD32F450\\project1\\Hardware\\led",
-    "e:\\GD32F450\\project1\\Hardware\\usart",
-    "e:\\GD32F450\\project1\\Hardware\\ov2640",
-    "e:\\GD32F450\\project1\\Hardware\\DMA",
-    "e:\\GD32F450\\project1\\Hardware\\lcd",
+    "e:\\lcd\\GD32_QR_Decoder\\User",
+    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\CMSIS",
+    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Include",
+    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Include",
+    "e:\\lcd\\GD32_QR_Decoder\\Hardware\\usart",
+    "e:\\lcd\\GD32_QR_Decoder\\Hardware\\DMA",
+    "e:\\lcd\\GD32_QR_Decoder\\Hardware\\LCD",
     "C:\\Keil_v5\\ARM\\ARMCLANG\\include",
     "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux",
     "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux_compat",
     "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\libcxx",
-    "e:\\GD32F450\\project1\\Firmware\\GD32F4xx_standard_peripheral\\Source",
-    "e:\\GD32F450\\project1\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source\\ARM",
-    "e:\\GD32F450\\project1\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source",
-    "e:\\GD32F450\\project1\\Doc"
+    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Source",
+    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source\\ARM",
+    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source",
+    "e:\\lcd\\GD32_QR_Decoder\\Doc"
   ],
   "C_Cpp_Runner.includeSearch": [
     "*",
@@ -75,15 +73,10 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "bsp_dma.h": "c",
-    "main.h": "c",
-    "ov2640.h": "c",
-    "sccb.h": "c",
-    "bsp_usart.h": "c",
-    "systick.h": "c",
-    "lcdinit.h": "c",
-    "usart.h": "c",
-    "gd32f4xx_gpio.h": "c",
-    "dma.h": "c"
+    "lcd_init.h": "c",
+    "lcd.h": "c",
+    "lcdfont.h": "c",
+    "pic.h": "c",
+    "gd32f4xx_spi.h": "c"
   }
 }
