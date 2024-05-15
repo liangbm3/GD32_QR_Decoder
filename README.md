@@ -1,2 +1,3 @@
 # GD32_QR_Decoder
-串口移植分支，实现串口发送功能，printf重定向，DMA串口接收等功能
+LCD屏幕移植分支，通过软件SPI和硬件SPI实现1.8寸LCD屏幕的接入。
+

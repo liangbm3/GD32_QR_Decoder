@@ -20,8 +20,8 @@
 void dma_config(void)
 {
 	dma_single_data_parameter_struct dma_init_struct;//定义DMA参数结构体
-	rcu_periph_clock_enable(DMA_RCU);//开启DMA时钟
-	dma_deinit(DMA, DMA_CH);//复位DMA
+	rcu_periph_clock_enable(DMA_USART_RCU);//开启DMA时钟
+	dma_deinit(DMA_USART, DMA_USART_CH);//复位DMA
 
 	/*DMA参数结构体的配置*/
 	dma_init_struct.periph_addr = (uint32_t)&USART_DATA(USART0);//外设基地址，取USART0的地址
@@ -35,13 +35,13 @@ void dma_config(void)
 	dma_init_struct.priority = DMA_PRIORITY_ULTRA_HIGH;//DMA的软件优先级，这里配置为超高优先级
 
 	/*定义单一传输参数结构体*/
-	dma_single_data_mode_init(DMA, DMA_CH, &dma_init_struct);
+	dma_single_data_mode_init(DMA_USART, DMA_USART_CH, &dma_init_struct);
 	/*使能通道外设*/
-	dma_channel_subperipheral_select(DMA, DMA_CH, DMA_SUBPERI4);
+	dma_channel_subperipheral_select(DMA_USART, DMA_USART_CH, DMA_SUBPERI4);
 	/*使能DMA通道*/
-	dma_channel_enable(DMA, DMA_CH);
+	dma_channel_enable(DMA_USART, DMA_USART_CH);
 	/*使能DMA中断*/
-	dma_interrupt_enable(DMA, DMA_CH, DMA_CHXCTL_FTFIE);//通道传输完成中断
+	dma_interrupt_enable(DMA_USART, DMA_USART_CH, DMA_CHXCTL_FTFIE);//通道传输完成中断
 	nvic_irq_enable(DMA1_Channel2_IRQn, 2, 1);//配置中断优先级
 	/*使能串口接收DMA*/
 	usart_dma_receive_config(USART0, USART_DENR_ENABLE);
@@ -53,9 +53,9 @@ void dma_config(void)
 *************************************************/
 void DMA1_Channel2_IRQHandler(void)
 {
-	if (dma_interrupt_flag_get(DMA, DMA_CH, DMA_INT_FLAG_FTF) == SET)
+	if (dma_interrupt_flag_get(DMA_USART, DMA_USART_CH, DMA_INT_FLAG_FTF) == SET)
 	{
-		dma_interrupt_flag_clear(DMA, DMA_CH, DMA_INT_FLAG_FTF);
+		dma_interrupt_flag_clear(DMA_USART, DMA_USART_CH, DMA_INT_FLAG_FTF);
 		// g_recv_complete_flag = 1;
 	}
 }

@@ -110,8 +110,8 @@ void USART0_IRQHandler(void)
         usart_data_receive(USART); // 必须要读，读出来的值不能要
 
         /*处理DMA接收到的数据*/
-        g_recv_length = USART_RECEIVE_LENGTH - dma_transfer_number_get(DMA, DMA_CH); // 时间接收的长度等于数组长度减去当前DMA剩余的数据量
-        dma_channel_disable(DMA, DMA_CH);                                            // 失能DMA
+        g_recv_length = USART_RECEIVE_LENGTH - dma_transfer_number_get(DMA_USART, DMA_USART_CH); // 时间接收的长度等于数组长度减去当前DMA剩余的数据量
+        dma_channel_disable(DMA_USART, DMA_USART_CH);                                            // 失能DMA
         dma_config();                                                                        // 重新配置DMA
         g_recv_buff[g_recv_length] = '\0';
         g_recv_complete_flag = 1;

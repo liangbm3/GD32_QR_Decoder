@@ -17,9 +17,9 @@
 #include "gd32f4xx_dma.h"
 
 /* --------------------------------- DMA宏定义 --------------------------------- */
-#define DMA_RCU   	       RCU_DMA1
-#define DMA  				       DMA1
-#define DMA_CH  		       DMA_CH2
+#define DMA_USART_RCU   	       RCU_DMA1
+#define DMA_USART  				       DMA1
+#define DMA_USART_CH  		       DMA_CH2
 /* -------------------------------------------------------------------------- */
 
 void dma_config(void);
