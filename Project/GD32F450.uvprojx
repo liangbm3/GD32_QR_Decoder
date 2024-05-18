@@ -324,7 +324,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>3</wLevel>
+            <wLevel>1</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -339,9 +339,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>ENABLE_QRCODE,NDEBUG</Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\Firmware\CMSIS;..\Firmware\CMSIS\GD\GD32F4xx\Include;..\Firmware\GD32F4xx_standard_peripheral\Include;..\Hardware\usart;..\Hardware\DMA</IncludePath>
+              <IncludePath>..\User;..\Firmware\CMSIS;..\Firmware\CMSIS\GD\GD32F4xx\Include;..\Firmware\GD32F4xx_standard_peripheral\Include;..\Hardware\usart;..\Hardware\DMA;..\Software\Zbar\include;..\Software\Zbar\zbar;..\Software\Zbar\zbar\decoder;..\Software\Zbar\zbar\qrcode</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -594,6 +594,91 @@
         </Group>
         <Group>
           <GroupName>App</GroupName>
+        </Group>
+        <Group>
+          <GroupName>Software</GroupName>
+          <Files>
+            <File>
+              <FileName>qr_finder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\decoder\qr_finder.c</FilePath>
+            </File>
+            <File>
+              <FileName>bch15_5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\qrcode\bch15_5.c</FilePath>
+            </File>
+            <File>
+              <FileName>binarize.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\qrcode\binarize.c</FilePath>
+            </File>
+            <File>
+              <FileName>isaac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\qrcode\isaac.c</FilePath>
+            </File>
+            <File>
+              <FileName>qrdec.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\qrcode\qrdec.c</FilePath>
+            </File>
+            <File>
+              <FileName>qrdectxt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\qrcode\qrdectxt.c</FilePath>
+            </File>
+            <File>
+              <FileName>rs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\qrcode\rs.c</FilePath>
+            </File>
+            <File>
+              <FileName>util.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\qrcode\util.c</FilePath>
+            </File>
+            <File>
+              <FileName>config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\config.c</FilePath>
+            </File>
+            <File>
+              <FileName>decoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\decoder.c</FilePath>
+            </File>
+            <File>
+              <FileName>error.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\error.c</FilePath>
+            </File>
+            <File>
+              <FileName>image.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\image.c</FilePath>
+            </File>
+            <File>
+              <FileName>img_scanner.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\img_scanner.c</FilePath>
+            </File>
+            <File>
+              <FileName>refcnt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\refcnt.c</FilePath>
+            </File>
+            <File>
+              <FileName>scanner.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\scanner.c</FilePath>
+            </File>
+            <File>
+              <FileName>symbol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Zbar\zbar\symbol.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
