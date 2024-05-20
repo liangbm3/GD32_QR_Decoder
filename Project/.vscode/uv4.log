@@ -1,3 +1,3 @@
-Load "e:\\GD32F450\\GD32_QR_Decoder\\Project\\Objects\\GD32F450.axf" 
+Load "e:\\usart\\GD32_QR_Decoder\\Project\\Objects\\GD32F450.axf" 
 Erase Done.Programming Done.Verify OK.Application running ...
-Flash Load finished at 22:21:09
+Flash Load finished at 21:22:31

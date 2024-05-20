@@ -456,20 +456,20 @@
         {
             "name": "Target 1",
             "includePath": [
-                "e:\\GD32F450\\GD32_QR_Decoder\\User",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Firmware\\CMSIS",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Include",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Include",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Hardware\\usart",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Hardware\\DMA",
+                "e:\\usart\\GD32_QR_Decoder\\User",
+                "e:\\usart\\GD32_QR_Decoder\\Firmware\\CMSIS",
+                "e:\\usart\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Include",
+                "e:\\usart\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Include",
+                "e:\\usart\\GD32_QR_Decoder\\Hardware\\usart",
+                "e:\\usart\\GD32_QR_Decoder\\Hardware\\DMA",
                 "C:\\Keil_v5\\ARM\\ARMCLANG\\include",
                 "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux",
                 "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux_compat",
                 "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\libcxx",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Source",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source\\ARM",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source",
-                "e:\\GD32F450\\GD32_QR_Decoder\\Doc"
+                "e:\\usart\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Source",
+                "e:\\usart\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source\\ARM",
+                "e:\\usart\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source",
+                "e:\\usart\\GD32_QR_Decoder\\Doc"
             ],
             "defines": [
                 "__alignof__(x)=",
