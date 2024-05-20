@@ -38,21 +38,23 @@
   "C_Cpp_Runner.compilerArgs": [],
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.includePaths": [
-    "e:\\lcd\\GD32_QR_Decoder\\User",
-    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\CMSIS",
-    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Include",
-    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Include",
-    "e:\\lcd\\GD32_QR_Decoder\\Hardware\\usart",
-    "e:\\lcd\\GD32_QR_Decoder\\Hardware\\DMA",
-    "e:\\lcd\\GD32_QR_Decoder\\Hardware\\LCD",
+    "e:\\OV\\GD32_QR_Decoder\\User",
+    "e:\\OV\\GD32_QR_Decoder\\Firmware\\CMSIS",
+    "e:\\OV\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Include",
+    "e:\\OV\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Include",
+    "e:\\OV\\GD32_QR_Decoder\\Hardware\\usart",
+    "e:\\OV\\GD32_QR_Decoder\\Hardware\\DMA",
+    "e:\\OV\\GD32_QR_Decoder\\Hardware\\LCD",
+    "e:\\OV\\GD32_QR_Decoder\\Hardware\\OV2640",
     "C:\\Keil_v5\\ARM\\ARMCLANG\\include",
     "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux",
     "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux_compat",
     "C:\\Keil_v5\\ARM\\ARMCLANG\\include\\libcxx",
-    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Source",
-    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source\\ARM",
-    "e:\\lcd\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source",
-    "e:\\lcd\\GD32_QR_Decoder\\Doc"
+    "E:\\GD32F450\\project1\\Hardware\\ov2640",
+    "e:\\OV\\GD32_QR_Decoder\\Firmware\\GD32F4xx_standard_peripheral\\Source",
+    "e:\\OV\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source\\ARM",
+    "e:\\OV\\GD32_QR_Decoder\\Firmware\\CMSIS\\GD\\GD32F4xx\\Source",
+    "e:\\OV\\GD32_QR_Decoder\\Doc"
   ],
   "C_Cpp_Runner.includeSearch": [
     "*",
@@ -71,12 +73,5 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "files.associations": {
-    "lcd_init.h": "c",
-    "lcd.h": "c",
-    "lcdfont.h": "c",
-    "pic.h": "c",
-    "gd32f4xx_spi.h": "c"
-  }
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
 }
