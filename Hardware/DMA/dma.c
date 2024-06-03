@@ -12,6 +12,10 @@
 #include "gd32f4xx.h"
 #include "dma.h"
 #include "usart.h"
+#include "ov2640.h"
+
+
+
 
 /************************************************
  * @brief : DMA配置函数，对DMA进行初始化
@@ -47,6 +51,48 @@ void dma_config(void)
 	usart_dma_receive_config(USART0, USART_DENR_ENABLE);
 }
 
+void DCItoLCD_DMA_Init()
+{
+    dma_single_data_parameter_struct dma_single_struct; //定义DMA参数结构体
+
+    rcu_periph_clock_enable(RCU_DMA1);
+    dma_deinit(DMA_DCI, DMA_DCI_CH);
+    dma_single_struct.periph_addr = (uint32_t)DCI_DR_ADDRESS;//外设基地址
+    dma_single_struct.memory0_addr =  (uint32_t)photo_buff; //存储器基地址，定义的数组的地址
+    dma_single_struct.direction = DMA_PERIPH_TO_MEMORY;//DMA数据传输方向，外设到存储器
+    dma_single_struct.number =65535;//65535; // 38400 x 4 = 153600B
+    dma_single_struct.periph_inc = DMA_PERIPH_INCREASE_DISABLE;//外设地址生成算法，串口地址不变，设置为固定模式
+    dma_single_struct.memory_inc = DMA_MEMORY_INCREASE_ENABLE;//存储器基地址，每次存放的地址不同，要配置为增量模式
+    dma_single_struct.periph_memory_width = DMA_PERIPH_WIDTH_32BIT;//DMA_PERIPH_WIDTH_32BIT
+    dma_single_struct.priority = DMA_PRIORITY_HIGH;//DMA的软件优先级，这里配置为高优先级
+    dma_single_struct.circular_mode = DMA_CIRCULAR_MODE_DISABLE; //DMA循环模式，关闭循环模式
+    dma_single_data_mode_init(DMA_DCI, DMA_DCI_CH, &dma_single_struct);
+
+    dma_channel_subperipheral_select(DMA_DCI, DMA_DCI_CH, DMA_SUBPERI1);//DMAÍ¨µÀÍâÉèÑ¡Ôñ
+	dma_channel_enable(DMA_DCI, DMA_DCI_CH);
+	dma_interrupt_enable(DMA_DCI, DMA_DCI_CH, DMA_CHXCTL_FTFIE);//通道传输完成中断
+	dma_interrupt_enable(DMA_DCI,DMA_DCI_CH,DMA_CHXCTL_TAEIE);
+	nvic_irq_enable(DMA1_Channel7_IRQn, 2, 1);//配置中断优先级
+}
+
+/************************************************
+ * @brief : DMA传输完成中断函数，清除中断完成标志位
+ * @date : 2024-05-13
+*************************************************/
+void DMA1_Channel7_IRQHandler(void)
+{
+	if (dma_interrupt_flag_get(DMA_DCI, DMA_DCI_CH,DMA_INT_FLAG_FTF ) == SET)
+	{
+		dma_interrupt_flag_clear(DMA_DCI, DMA_DCI_CH, DMA_INT_FLAG_FTF);
+		printf("ok");
+	}
+	if (dma_interrupt_flag_get(DMA_DCI, DMA_DCI_CH, DMA_INT_FLAG_TAE) == SET)
+	{
+		printf("no");
+	}
+	printf("enter\n");
+}
+
 /************************************************
  * @brief : DMA传输完成中断函数，清除中断完成标志位
  * @date : 2024-05-13
@@ -57,5 +103,7 @@ void DMA1_Channel2_IRQHandler(void)
 	{
 		dma_interrupt_flag_clear(DMA_USART, DMA_USART_CH, DMA_INT_FLAG_FTF);
 		// g_recv_complete_flag = 1;
+		printf("111");
+		
 	}
 }

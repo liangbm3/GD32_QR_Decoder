@@ -46,6 +46,9 @@ extern uint8_t g_recv_buff[USART_RECEIVE_LENGTH];
 extern uint16_t g_recv_length;
 extern uint8_t g_recv_complete_flag; 
 
+extern uint32_t photo_buff[10000];
+extern uint16_t photo_length;
+extern uint8_t photo_complete_flag;
 
 void usart_gpio_config(uint32_t band_rate);
 void usart_send_data(uint8_t ucch);

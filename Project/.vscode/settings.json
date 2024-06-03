@@ -73,5 +73,17 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
+<<<<<<< HEAD
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "files.associations": {
+    "lcd.h": "c",
+    "dma.h": "c",
+    "usart.h": "c",
+    "ov2640.h": "c",
+    "lcd_init.h": "c",
+    "gd32f4xx_rcu.h": "c"
+  }
+=======
   "C_Cpp_Runner.msvcSecureNoWarnings": false
+>>>>>>> 3eaf9909392c6c25636138b6605170513f0f5e50
 }

@@ -17,6 +17,10 @@ uint8_t g_recv_buff[USART_RECEIVE_LENGTH]; // 定义接收用来接收数据的�
 uint16_t g_recv_length = 0;                // 数组长度
 uint8_t g_recv_complete_flag = 0;          // 完成的标志位
 
+uint32_t photo_buff[10000];
+uint16_t photo_length;
+uint8_t photo_complete_flag;
+
 /************************************************
  * @brief : usart初始化函数，对串口进行初始化
  * @param  band_rate        

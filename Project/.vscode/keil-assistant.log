@@ -1,4 +1,55 @@
 [info] Log at : 2024/5/20|16:40:33|GMT+0800
 
 [info] Log at : 2024/5/20|16:40:36|GMT+0800
+<<<<<<< HEAD
 
+[info] Log at : 2024/5/21|09:38:12|GMT+0800
+
+[info] Log at : 2024/5/21|09:38:15|GMT+0800
+
+[info] Log at : 2024/5/22|09:10:30|GMT+0800
+
+[info] Log at : 2024/5/22|09:10:42|GMT+0800
+
+[info] Log at : 2024/5/22|12:44:12|GMT+0800
+
+[info] Log at : 2024/5/22|12:44:20|GMT+0800
+
+[info] Log at : 2024/5/23|09:12:28|GMT+0800
+
+[info] Log at : 2024/6/2|18:00:13|GMT+0800
+
+[info] Log at : 2024/6/2|18:00:18|GMT+0800
+
+[info] Log at : 2024/6/2|22:53:32|GMT+0800
+
+[info] Log at : 2024/6/2|23:07:56|GMT+0800
+
+[info] Log at : 2024/6/3|08:20:08|GMT+0800
+
+[info] Log at : 2024/6/3|13:26:44|GMT+0800
+
+[info] Log at : 2024/6/3|15:08:23|GMT+0800
+
+[info] Log at : 2024/6/3|17:16:21|GMT+0800
+
+[info] Log at : 2024/6/3|18:29:57|GMT+0800
+
+[info] Log at : 2024/6/3|18:30:02|GMT+0800
+=======
+>>>>>>> 3eaf9909392c6c25636138b6605170513f0f5e50
+
+[info] Log at : 2024/6/3|19:11:13|GMT+0800
+
+[SyntaxError: Expected property name or '}' in JSON at position 3 (line 2 column 1)
+	at JSON.parse (<anonymous>)
+	at F.updateCppProperties (c:\Users\LBM\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:10911)
+	at F.<anonymous> (c:\Users\LBM\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:12641)
+	at Generator.next (<anonymous>)
+	at c:\Users\LBM\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:4542
+	at new Promise (<anonymous>)
+	at r (c:\Users\LBM\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:4287)
+	at F.load (c:\Users\LBM\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:11372)
+	at w.<anonymous> (c:\Users\LBM\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:8799)
+	at Generator.next (<anonymous>)
+	at a (c:\Users\LBM\.vscode\extensions\cl.keil-assistant-1.7.0\dist\extension.js:1:4344)]
