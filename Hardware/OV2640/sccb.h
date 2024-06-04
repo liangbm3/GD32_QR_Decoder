@@ -1,15 +1,14 @@
 /************************************************
  * @file Name: sccb.h
- * @brief : 
+ * @brief : SCCB控制接口头文件
  * @author : lbm (3095088766@qq.com)
  * @version : 1.0
- * @date : 2024-05-16
+ * @date : 2024-05-09
  * 
  * modification history :
  * @date:       @version:      @author:     
  * Changes: 
 *************************************************/
-
 #ifndef SCCB_H
 #define SCCB_H
 
@@ -42,10 +41,10 @@
 #define SDA(x)          gpio_bit_write(PORT_OV2640_SDA,GPIO_OV2640_SDA, (x?SET:RESET))
 #define SCL(x)          gpio_bit_write(PORT_OV2640_SCL,GPIO_OV2640_SCL, (x?SET:RESET))
 
-#define IIC_ADDR   			0X60  			//OV2640ID 
-
+#define IIC_ADDR   			0X60  			//OV2640µÄIICµØÖ·
+#define OV2640_MID				0X7FA2
+#define OV2640_PID				0X2642
 void OV2640_IIC_Init(void);
 uint8_t IIC_RD_Reg(uint8_t reg);
 uint8_t IIC_WR_Reg(uint8_t reg,uint8_t data);
-
 #endif

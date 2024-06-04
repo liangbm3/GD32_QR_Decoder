@@ -410,11 +410,6 @@
               <FilePath>..\Hardware\DMA\dma.c</FilePath>
             </File>
             <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\usart\usart.c</FilePath>
-            </File>
-            <File>
               <FileName>lcd.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Hardware\LCD\lcd.c</FilePath>
@@ -425,14 +420,19 @@
               <FilePath>..\Hardware\LCD\lcd_init.c</FilePath>
             </File>
             <File>
+              <FileName>ov2640.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\OV2640\ov2640.c</FilePath>
+            </File>
+            <File>
               <FileName>sccb.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Hardware\OV2640\sccb.c</FilePath>
             </File>
             <File>
-              <FileName>ov2640.c</FileName>
+              <FileName>usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>E:\GD32F450\project1\Hardware\ov2640\ov2640.c</FilePath>
+              <FilePath>..\Hardware\usart\usart.c</FilePath>
             </File>
           </Files>
         </Group>
