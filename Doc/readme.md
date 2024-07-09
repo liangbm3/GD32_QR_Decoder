@@ -1,0 +1,1 @@
+本项目在立创梁山派中实现了对二维码的识别并上传到上位机中，具体效果可参考视频[无线手持二维码识别器](https://www.bilibili.com/video/BV1Lm3GeSESb/)

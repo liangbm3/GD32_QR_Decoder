@@ -19,13 +19,14 @@
 #include "systick.h"
 #include <stdio.h>
 
+extern int capture_flag;
 /* -------------------------------------------------------------------------- */
 //PIXCLK  PA6
 //VSYNC   PG9
 //HSYNC   PA4
 //D0      PC6
 //D1      PC7
-//D2    ` PC8
+//D2      PC8
 //D3      PC9
 //D4      PC11
 //D5      PD3
@@ -60,12 +61,13 @@ typedef struct
 #define OV2640_MIDH       0x1C 
 #define OV2640_MIDL       0x1D 
 
+
+
 void DCI_OV2640_Init(void);
 
 uint8_t SCCB_OV2640_init(void);
 uint8_t OV2640_Outsize_Set(uint16_t width, uint16_t height);
 uint8_t dci_ov2640_id_read(ov2640_id_struct *ov2640id);
-uint8_t OV2640_OutSize_Set(uint16_t width, uint16_t height);
 uint8_t OV2640_ImageSize_Set(uint16_t width, uint16_t height);
 
 #endif

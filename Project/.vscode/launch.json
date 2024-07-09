@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/GD32F450/project1/Hardware/led",
-      "program": "e:/GD32F450/project1/Hardware/led/build/Debug/outDebug",
+      "cwd": "d:/e/decoderV1.0/Hardware/key",
+      "program": "d:/e/decoderV1.0/Hardware/key/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
